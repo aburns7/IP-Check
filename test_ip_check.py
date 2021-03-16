@@ -8,8 +8,6 @@ from netaddr import *
 def test_find_ip():
     #API call to JSON Data
     ip = IPAddress('192.208.0.0')
-
-    ip_set = (['69.208.0.0/15','2.56.32.0/22','192.124.99.0/24'])
     r = requests.get("https://stat.ripe.net/data/country-resource-list/data.json?resource=US&v4_format=prefix")
     #Grab ipv4 address blocks into a set
     ipv4_set = set(r.json()['data']['resources']['ipv4'])
