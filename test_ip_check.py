@@ -19,4 +19,3 @@ def test_find_ip():
         print(f"Pass: {ip} is found in the ipv4 CIDR ranges")
     else:
         print(f"Fail: {ip} is not found in the ipv4 CIDR ranges")
-    
